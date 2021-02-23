@@ -1,14 +1,12 @@
-import { Helmet } from 'react-helmet'
+import { useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 
-export const PageNotFound = () => {
-  return (
-    <>
-      <Helmet>
-        <title>Page not found</title>
-      </Helmet>
-      404 Page not found
-    </>
-  )
+const PageNotFound = () => {
+  let history = useHistory()
+  useEffect(() => {
+    history.push('/')
+  })
+  return <div></div>
 }
 
 export default PageNotFound

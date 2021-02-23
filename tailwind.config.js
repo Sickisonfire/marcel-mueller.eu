@@ -1,10 +1,27 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
+
+const _ = require('lodash')
 
 module.exports = {
   purge: [],
   presets: [],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        orange: {
+          300: '#DC7C5C',
+          500: '#FD612C',
+          700: '#F24E1E',
+        },
+      },
+    },
+
     screens: {
       sm: '640px',
       md: '768px',
@@ -18,7 +35,7 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      gray: colors.trueGray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
