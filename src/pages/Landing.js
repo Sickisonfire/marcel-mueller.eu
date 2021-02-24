@@ -19,7 +19,7 @@ export const Landing = () => {
         !loading && tw`opacity-100`,
       ]}
     >
-      <h2 tw='text-7xl sm:text-8xl text-white font-bold mt-10 sm:mt-40'>
+      <h2 tw='text-7xl sm:text-8xl text-white font-bold mt-10 sm:mt-20'>
         Hey!
         <br />I am Marcel.
       </h2>

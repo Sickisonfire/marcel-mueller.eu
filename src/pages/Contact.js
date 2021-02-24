@@ -15,7 +15,7 @@ export const Contact = () => {
   return (
     <div
       css={[
-        tw` flex flex-col justify-center max-w-2xl 2xl:max-w-2xl transition-all  duration-1000 opacity-0 space-y-5`,
+        tw` flex flex-col justify-center max-w-2xl 2xl:max-w-2xl transition-all  duration-1000 opacity-0 space-y-5 sm:mt-20`,
         !loading && tw`opacity-100`,
       ]}
     >

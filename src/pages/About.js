@@ -61,7 +61,7 @@ export const About = () => {
         </Link>
         . I might already know a thing or two about it!
       </p>
-      <div tw='  flex space-x-5 items-center justify-center mb-10 flex-wrap text-sm '>
+      <div tw='flex space-x-5 md:justify-between items-center justify-center mb-10 flex-wrap text-sm '>
         <TechItem tw='mb-5'>
           <img src={figma} alt='figma logo' tw=' h-10 2xl:h-14 ' />
           <p>Figma</p>
