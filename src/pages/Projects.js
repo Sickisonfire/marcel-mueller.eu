@@ -11,7 +11,7 @@ const projects = [
     description:
       'Simple todolist application. Includes user registration, login and simple CRUD operations for user specific lists.',
     tags: 'react,tailwind,strapi',
-    projectUrl: 'https://todo.www.marcel-mueller.eu',
+    projectUrl: 'https://www.todo.marcel-mueller.eu',
     github: 'https://github.com/Sickisonfire/trello-clone',
     image: 'todolist.png',
     imageAlt: 'image of the Trello clone',
