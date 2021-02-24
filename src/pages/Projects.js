@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 
 /** @jsxImportSource @emotion/react */
 import tw, { css } from 'twin.macro'
@@ -39,17 +40,22 @@ export const Projects = () => {
   }, [content])
 
   return (
-    <div tw=''>
-      <div
-        css={[
-          tw` flex flex-col space-y-16   2xl:max-w-2xl transition-all  duration-1000 opacity-0  pr-5 `,
-          !loading && tw`opacity-100`,
-        ]}
-      >
-        {!loading && content.map((project) => <ProjectItem key={project.id} project={project} />)}
-        <MoreToCome></MoreToCome>
+    <>
+      <Helmet>
+        <title>Projects</title>
+      </Helmet>
+      <div tw=''>
+        <div
+          css={[
+            tw` flex flex-col space-y-16   2xl:max-w-2xl transition-all  duration-1000 opacity-0  pr-5 `,
+            !loading && tw`opacity-100`,
+          ]}
+        >
+          {!loading && content.map((project) => <ProjectItem key={project.id} project={project} />)}
+          <MoreToCome></MoreToCome>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
