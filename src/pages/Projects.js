@@ -6,6 +6,16 @@ import tw, { css } from 'twin.macro'
 
 const projects = [
   {
+    id: 3,
+    title: 'Store-Covid traffic light',
+    description: 'UI for customer regulation at stores because of covid.',
+    tags: 'react,tailwind',
+    projectUrl: 'https://www.covid.marcel-mueller.eu',
+    github: 'https://github.com/Sickisonfire/covidampel',
+    image: 'covid-ampel.png',
+    imageAlt: 'image of the entrance-UI for stores',
+  },
+  {
     id: 1,
     title: 'Trello clone',
     description:
